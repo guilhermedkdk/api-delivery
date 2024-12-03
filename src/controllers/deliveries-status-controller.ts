@@ -1,8 +1,6 @@
 import type { Request, Response } from "express";
 import { prisma } from "@/database/prisma";
 import { z } from "zod";
-import { request } from "http";
-import { brotliDecompress } from "zlib";
 
 class DeliveriesStatusController {
   async update(request: Request, response: Response) {
